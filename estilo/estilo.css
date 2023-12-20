@@ -1,0 +1,171 @@
+/*Datos personales
+Celia Barral Juárez
+UO277578
+*/
+
+/* Dusty Rose
+#DACAC4
+Scallop Seashell
+#F7C9B6
+Beige
+#DBC39A
+Seafoam Green
+#DAE7DD */
+
+/*Scallop Seashell
+#E7D2CC
+Pewter
+#B9B7BD
+Gray
+#868B8E
+Ivory
+#EEEDE7*/
+
+/*Especificidad 001*/
+body {
+    font-family: Tahoma, sans-serif;
+    color:black;
+    background-color:#f3efed; 
+	  text-align:justify;
+    font-size: 1.4em;
+}
+
+/*Especificidad 002*/
+body > *:not(header) {
+  margin-left: 2%; margin-right: 2%; 
+}
+
+/*Especificidad 001*/
+h2{
+  text-align: center;
+  text-decoration: underline;
+}
+/*Especificidad 001*/
+h3{
+  margin: 0.7em 0;
+  display: inline-block; 
+  background-color: #DACAC4; 
+  padding:0.7em;
+}
+
+/*Especificidad 001*/
+a {
+    outline: none;
+    color:black;
+    text-decoration: none;
+    padding: 2px 5px 0;
+  }
+
+/*Especificidad 011*/
+  a:link {
+    color: black;
+  }
+
+/*Especificidad 011*/
+a:focus {
+    border-bottom: 2px solid;
+    background: #bae498;
+}
+
+/*Especificidad 011*/
+a:hover {
+    border-bottom: 2px solid;
+    background: #f3efed;
+}
+
+ /*Especificidad 011*/
+a:active{
+    border-bottom: 2px solid;
+}
+
+ /*Especificidad 002*/
+ul >li{
+    margin: 0.1em;
+
+}
+
+
+/*Especificidad 002*/
+ol>li {
+  margin-bottom: 5px; 
+}
+
+ /*Especificidad 002*/
+video,img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Especificidad 001*/
+table {
+    width: 30%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+  }
+  
+/*Especificidad 001*/
+  caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /*Especificidad 001*/
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Estilo para la primera fila (encabezados de columna) */
+  th,th[scope="row"] {
+    background-color: #DACAC4;
+    font-weight: bold;
+  }
+  
+  /*Especificidad 001*/
+  dt {
+    text-decoration: underline;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+button{
+  align-self: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #D2B48C;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #DACAC4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre elementos del formulario */
+}
+
+/* Estilos para los campos de texto */
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilos para el botón Enviar */
+input[type="submit"] {
+  width: 20%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
